@@ -1,5 +1,5 @@
 #include <iostream>
-// #include <thread>
+#include <thread>
 
 char** createSomeMap();
 void freeMap( char** );
@@ -15,8 +15,8 @@ int main()
 	{
 		drawMap( map );
 		moveMap( map );
-		//std::this_thread::sleep_for( std::chrono::milliseconds( 20 ) );
-	} while( std::cin.get() == '\n' );
+		std::this_thread::sleep_for( std::chrono::milliseconds( 100 ) );
+	} while( true );
 
 
         freeMap(map);
