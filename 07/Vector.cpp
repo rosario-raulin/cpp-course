@@ -1,6 +1,6 @@
 #include "Vector.h"
 
-#include <cassert>
+// #include <cassert>
 #include <sstream>
 #include <cstring>
 
@@ -26,14 +26,14 @@ namespace Math
 
 	Element Vector::operator [] (unsigned int index) const {
 		if (index > m_size) {
-			index = m_size;
+			index = m_size-1;
 		}
 		return m_elements[index];
 	}
 
 	Element& Vector::operator [] (unsigned int index) {
 		if (index > m_size) {
-			index = m_size;
+			index = m_size-1;
 		}
 		return m_elements[index];
 	}
