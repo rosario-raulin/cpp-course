@@ -1,0 +1,8 @@
+Your clock has 1000000000 ticks per second
+
+Consumed time in    heavyWork2()   [demo.cpp] :
+    1.92126 ms    [1.92126 ms]
+Consumed time in    heavyWork1()   [demo.cpp] :
+    8.55588 ms    [8.55588 ms]
+Consumed time in    main()   [demo.cpp] :
+    15.1757 ms    [4.69854 ms]
